@@ -6,8 +6,15 @@ export interface Address{
 }
 
 export interface Person {
-    _id?:string;
+    _id?:any;
     name:string;
     age:number;
     address:Address;
+}
+
+export interface User {
+    _id?:any;
+    email:string;
+    password:string;
+    role:string;
 }

@@ -26,78 +26,78 @@ db.person.find({}, {name:true})
 db.person.findOneAndReplace({_id:ObjectId('64b6567a6d7cc7e7ff0c8421')}, {age: 78, name:'Jean', address: {}})
 //Tandis que le findOneAndUpdate va commencer de la même manière mais permettra de mettre à jour un seul champ (ou plusieurs, comme on veut) avec un $set ou un $inc ou autre
 db.person.findOneAndUpdate({_id:ObjectId('64b6567a6d7cc7e7ff0c8421')}, {$set:{age: 78}})
-// db.person.insertMany([
-//     {
-//         name: 'Paul',
-//         age: 25,
-//         address: {
-//             number: '54',
-//             street: 'rue du truc',
-//             city: 'Grenoble',
-//             country:'France'
-//         }
-//     },
-//     {
-//         name: 'Soumia',
-//         age: 45,
-//         address: {
-//             number: '14',
-//             street: 'rue du truc',
-//             city: 'Grenoble',
-//             country:'France'
-//         }
-//     },
-//     {
-//         name: 'Ahmed',
-//         age: 15,
-//         address: {
-//             number: '43',
-//             street: 'rue du truc',
-//             city: 'Lyon',
-//             country:'France'
-//         }
-//     },
-//     {
-//         name: 'Ling',
-//         age: 55,
-//         address: {
-//             number: '54',
-//             street: 'rue du truc',
-//             city: 'Lyon',
-//             country:'France'
-//         }
-//     },
-//     {
-//         name: 'Jean',
-//         age: 31,
-//         address: {
-//             number: '54',
-//             street: 'rue du truc',
-//             city: 'Lyon',
-//             country:'France'
-//         }
-//     },
-//     {
-//         name: 'Paul',
-//         age: 65,
-//         address: {
-//             number: '12',
-//             street: 'rue du truc',
-//             city: 'Chambéry',
-//             country:'France'
-//         }
-//     },
-//     {
-//         name: 'Leslie',
-//         age: 77,
-//         address: {
-//             number: '54',
-//             street: 'rue du truc',
-//             city: 'Chambéry',
-//             country:'France'
-//         }
-//     }
-// ])
+ /* db.person.insertMany([
+     {
+         name: 'Paul',
+         age: 25,
+         address: {
+             number: '54',
+             street: 'rue du truc',
+             city: 'Grenoble',
+             country:'France'
+         }
+     },
+     {
+         name: 'Soumia',
+         age: 45,
+         address: {
+             number: '14',
+             street: 'rue du truc',
+             city: 'Grenoble',
+             country:'France'
+         }
+     },
+     {
+         name: 'Ahmed',
+         age: 15,
+         address: {
+             number: '43',
+             street: 'rue du truc',
+             city: 'Lyon',
+             country:'France'
+         }
+     },
+     {
+         name: 'Ling',
+         age: 55,
+         address: {
+             number: '54',
+             street: 'rue du truc',
+             city: 'Lyon',
+             country:'France'
+         }
+     },
+     {
+         name: 'Jean',
+         age: 31,
+         address: {
+             number: '54',
+             street: 'rue du truc',
+             city: 'Lyon',
+             country:'France'
+         }
+     },
+     {
+         name: 'Paul',
+         age: 65,
+         address: {
+             number: '12',
+             street: 'rue du truc',
+             city: 'Chambéry',
+             country:'France'
+         }
+     },
+     {
+         name: 'Leslie',
+         age: 77,
+         address: {
+             number: '54',
+             street: 'rue du truc',
+             city: 'Chambéry',
+             country:'France'
+         }
+     }
+ ]) */
 
 //On peut ajouter de nouveaux documents avec la fonction insertOne ou insertMany pour en rajouter plusieurs
 //Les collections mongodb n'ont pas de structure définie, c'est donc à nous de faire en sorte d'avoir une concordance des données
